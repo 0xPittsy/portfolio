@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>0xPittsy Portfolio</title>
+        <link rel="stylesheet" href="./@splidejs/splide/dist/css/splide.min.css">
+        <script type="text/javascript" src="./@splidejs/splide/dist/js/splide.min.js"></script>
+        
+        <script type="text/javascript" src="./@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.js">
+            new Splide( '.splide', {
+                autoScroll: {
+                    pauseOnHover: false,
+                },
+            }).mount( window.splide.Extensions );
+        </script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Karma:wght@400;500&family=Montserrat:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <nav>
+            <h1 id="portTitle">0xPittsy: <span class="head">Portfolio</span></h1>
+            <ul class="navItems">
+                <li class="navItem"><a id="aboutNav" href="#about">about</a></li>
+                <li class="navItem"><a id="projNav" href="#projects">projects</a></li>
+                <li class="navItem"><a id="skillsNav" href="#skills">skills</a></li>
+                <li class="navItem"><a id="contNav" href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        
+        <section id="about">
+            <div class="about-container">
+                <h2>About Me</h1>
+                    <div class="about-text">
+                        <p>
+                            
+                            Hi, I'm Pittsy. I've been learning web development for <span id="seconds-container"></span> seconds now, which means I started <span id="days-container"><script src="./counters.js"></script></span> days ago. I began my coding 
+                            journey with a free Learn Javascript course from <a id="codeLink" href="https://codecademy.com/" target="_blank">Codecademy</a>, which I really 
+                            enjoyed! There, I worked on a couple smalller learning projects, and quickly moved into HTML & CSS to continue learning. <br>
+                            <br>
+                            Now I'm in the process of learning how to put it all together! If you're interested, check out some of my stuff below by clicking on the title of the respective project.
+                        </p>
+                        <script>
+                            const codeColor = document.getElementById("codeLink");
+                            
+                            codeColor.addEventListener("mouseover", codeChange);
+                            codeColor.addEventListener("mouseout", codeBack);
+                            
+                            codeColor.style.color = "#f2e9e1";
+                            
+                            function codeChange() {
+                                codeColor.style.color = "#cbe86B";
+                            }
+                            function codeBack() {
+                                codeColor.style.color = "#f2e9e1";
+                            }
+                            </script>
+                    </div>
+                    <div class="about-image">
+                        <img src="./ehwa.jpeg" alt="baby me">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects">
+                <div class="projects-container">
+                    <h2>Projects</h2>
+                    <ul class="project-list">
+                        <li class="projName" id="shop">shopsClosed</li>
+                        <div class="project">
+                            <div id="shopImg">
+                                <p class="caption">
+                                    <img src="./shopsClosed.png" alt="example of program in terminal window">
+                                    Shop's Closed is a terminal based random string generator built using nodeJS. The example provided uses the context of a merchant in a video game telling the player the shop is not open, and to come back another day. shopsClosed works by generating a random number between 1-10, and based on which number is generated, selecting a pre-written section of the string. This occurs 3 times: once for the greeting, the name which the merchant calls the player, and the message telling the player to head home. You can see some example outputs in the image example.
+                                    <br><br>
+                                    All things considered, shopsClosed was pretty easy to code, and is able to be used in a variety of scenarios; not just a text box in a video game. This project is where I learned how to use nodeJS, and git version control, and was my first locally built nodeJS application.
+                                </p>
+                            </div>
+                        </div>
+                        <li class="projName" id="rock">rockPaperScissors</li>
+                        <div class="project">
+                            <div id="rockImg"> 
+                                <p class="caption">
+                                    <img src="./rockpaperscissors.png" alt="example of program in terminal window">
+                                    This terminal based game of rock paper scissors was one of my first ever programs written in JavaScript. I actually did this one in the first learnJS course I took, and it helped spark a passion for learning JavaScript and Web Development. This program was built on the Codecademy integrated IDE using JavaScript and can be run via nodeJS.
+                                    <br><br>
+                                This program works by taking an input from the user via the IDE Code Editor, and comparing it to a randomly generated response of either rock, paper, or scissors. The winner is chosen via the traditional rules of Rock, Paper, Scissors. Currently the users selection is based on what is built in to the code, and can’t be changed externally. I plan to update this program in the near future, to enable user input via the terminal, rather than a coded-in selection of the user’s preferred throw.
+                            </p>
+                        </div>
+                    </div>
+                    <li class="projName" id="site">portfolio</li>
+                    <div class="project">
+                        <div id="siteImg"> 
+                            <p class="caption">
+                                <img src="./portSite.png" alt="photo of this website">
+                                Building this portfolio was an enriching experience to say the least. I built this site locally using HTML and CSS, and spent the better half of the 3 day project playing with JavaScript trying to get things right. Most notably, the Skills section below features a carousel which, assuming you’re not on an old version of Internet Explorer, scrolls by itself across the page. Other JS elements like the project dropdowns, and some hover colour effects are included as well.
+                                <br><br>
+                                I learned a ton building this website, and it really increased my confidence as a web developer. I can safely say the second version of my portfolio will be even better than the first. Check back later if you’re interested in my next projects!
+                            </p>
+                        </div>
+                    </div>
+                </ul>
+                <script src="./dropdown.js"></script>
+                <script src="./hover.js"></script>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <section id="image-carousel" class="splide" aria-label="My Skills">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./splideImages/004-html.png" alt="HTML">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./splideImages/006-css-3.png" alt="CSS">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./splideImages/005-javascript.png" alt="JavaScript">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./splideImages/002-nodejs.png" alt="nodeJS">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./splideImages/003-git.png" alt="git">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./splideImages/007-github.png" alt="github">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./splideImages/001-chrome.png" alt="Chrome Devtools">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./splideImages/008-figma.png" alt="figma">
+                            </li>
+                      </ul>
+                </div>
+              </section>
+        </section>
+    <script>
+        // import { Splide } from '@splidejs/splide';
+        // import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+
+        new Splide( '.splide', {
+            type   : 'loop',
+            padding: '5rem',
+            perPage: 3,
+            focus: 'center',
+            drag: true,
+            autoScroll: {
+                pauseOnHover: false,
+                speed: 1,
+            }
+        } ).mount( window.splide.Extensions );
+    </script>
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/edtim" title="edt.im">edt.im</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>0xPittsy: Contact</title>
+        <link rel="stylesheet" href="./@splidejs/splide/dist/css/splide.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Karma:wght@400;500&family=Montserrat:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <nav>
+            <h1 id="portTitle">0xPittsy: <span class="head">Contact</span></h1>
+            <ul class="navItems">
+                <li class="navItem"><a id="homeNav" href="./index.html">home</a></li>
+            </ul>
+        </nav>
+        <section id="contact">
+            <div class="text-container">
+                <h3>Have an interesting project? <span>Let me know!</span></h3>
+                <h4>0xPittsy@gmail.com</h4>
+            </div>
+            <div class="icon-container">
+                <ul id="contact-icons">
+                    <li>
+                        <a href="https://github.com/0xPittsy" target="_blank"><img src="./splideImages/007-github.png" alt="github logo"></a>
+                    </li>
+                    <!-- <li>
+                        <a href=""><img src="./splideImages/email.png" alt="email logo"></a>
+                    </li> -->
+                </ul>
+            </div>
+
+            </div>
+        </section>
+
+        <script>
+            //for contact nav
+            const homeColor = document.getElementById("homeNav");
+
+            homeColor.addEventListener("mouseover", colorChange);
+            homeColor.addEventListener("mouseout", colorBack);
+
+            homeColor.style.color = "#f2e9e1";
+
+            function colorChange() {
+                homeColor.style.color = "#cbe86B";
+            }
+            function colorBack() {
+                homeColor.style.color = "#f2e9e1";
+            }
+        </script>
+    </body>
+</html>

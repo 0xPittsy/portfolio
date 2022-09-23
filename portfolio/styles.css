@@ -1,0 +1,366 @@
+/* UNIVERSAL STYLES */
+
+/* *{
+    border: 1px white solid;
+} */
+
+body{
+    width: 70vw;
+    padding-left: 15vw;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #1c140d;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #f2e9e1;
+    font-size: 4rem;
+}
+
+h2{
+    font-family: 'Courier Prime', monospace;
+    color:#cbe86B;
+    text-decoration: underline;
+    width: fit-content;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: .5rem;
+    margin-top: 2rem ;
+}
+
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Karma', serif;
+    color: #f2e9e1;
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Karma', serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+p a{
+    font-family: 'Karma', serif;
+    text-decoration-color: rgba(242, 233, 225, 0.3);
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    body{
+        width: 80vw;
+        padding-left: 10vw;
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #1c140d;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 427px){
+    body{
+        width: 80vw;
+        padding-left: 10vw;
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #1c140d;
+    }
+    nav #portTitle{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    #about div.about-text{
+        max-width: 55%;
+        min-width: 40%;
+        padding-right:1rem;
+        padding-left: 1rem;
+    }
+    
+    #about div.about-image{
+        margin: auto;
+        justify-content: center;
+        width: fit-content;
+        max-width: 35%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    /* and (min-width: 376px)  */
+    body{
+        width: 95vw;
+        padding-left: 2.5vw;
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #1c140d;
+    }
+    nav #portTitle{
+        display: flex;
+        font-size: 2.3rem;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #about div.about-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #about h2{
+        text-align: center;
+    }
+    div.projects-container h2{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0%;
+    }
+    #skills h2{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0%;
+    }
+
+    #about div.about-text{
+        width: 90% !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    
+    #about div.about-image{
+        margin: auto;
+        justify-content: center;
+        /* width: fit-content; */
+        max-width: 35%;
+        display:none;
+    }
+    #about div/*.about-image*/ img{
+        border-radius: 50%;
+        max-height: 100%;
+        width: auto;
+        align-self: center;
+        justify-self: center;
+        display: none;
+    }
+
+    ul.navItems {
+        padding-left: 0;
+        display: flex;
+        width: 90% !important;
+        margin-left: 5% !important;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        list-style: none;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    #projects div ul li.projName{
+        font-size: 1.5rem !important;
+        letter-spacing: 2px !important;
+        padding-top: 0.3rem;
+        padding-bottom: 0.2rem;
+        text-decoration: underline;
+        color: rgb(242, 233, 225);
+    }
+
+    nav #portTitle{
+        display: flex;
+        font-size: 2.3rem;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #projects div#shopImg img,
+    #projects div#siteImg img,
+    #projects div#rockImg img{
+        
+        display: none;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+}
+
+/* HEADER */
+
+nav #portTitle{
+    display: flex;
+}
+
+#portTitle .head{
+    color: #cbe86B;
+}
+/* NAVIGATION */
+
+nav a,
+ul li,
+ul .project{
+    list-style-position: outside;
+    list-style-type: "\25B6";
+    /* list-style-type: "\25B2"; */
+    font-family: 'Karma', serif;
+    /* text-decoration: none; */
+    color: #f2e9e1;
+}
+
+ul.navItems {
+    padding-left: 0;
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    justify-content: space-around;
+}
+
+li.navItem{
+    width: fit-content;
+
+}
+
+/* ABOUT */
+
+#about span #seconds-container,
+#about span #days-container{
+    font-family: 'Karma', serif;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#about div.about-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#about h2{
+    height: fit-content;
+    width: 100%;
+    text-decoration: underline;
+}
+
+#about div.about-text{
+    width: 65%;
+    padding-right:1rem;
+    padding-left: 1rem;
+}
+
+#about div.about-image{
+    margin: auto;
+    justify-content: center;
+    width: fit-content;
+}
+
+#about div/*.about-image*/ img{
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+/* PROJECTS */
+
+#projects div#shopImg,
+#projects div#rockImg,
+#projects div#siteImg{
+    display: none;
+}
+
+#projects div ul li.projName{
+    font-size: 1.9rem;
+    letter-spacing: 2.5px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
+    text-decoration: underline;
+    color: rgb(242, 233, 225);
+}
+
+#projects div.project{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 0%;
+    margin-right: 0%;
+}
+
+#projects div#shopImg,
+#projects div#rockImg,
+#projects div#siteImg{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#projects div.project .caption{
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    overflow: scroll;
+}
+
+
+#projects div#shopImg img,
+#projects div#siteImg img,
+#projects div#rockImg img{
+    float: right;
+    width: 68%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/* Skills */
+
+#skills{
+    margin-bottom: 2rem;
+}
+
+/* Contact */
+
+#contact{
+    text-align: center;
+}
+
+#contact h4{
+    margin-top: 0;
+}
+
+#contact span{
+    color:#cbe86B
+}
+
+#contact-icons{
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 50%;
+    padding-left: 25%;
+}
+
+#contact-icons li{
+    list-style: none;
+}
+
+#contact-icons li img {
+    width: 5rem;
+    height: auto;
+}

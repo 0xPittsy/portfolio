@@ -1,0 +1,30 @@
+
+
+h1 font: Montesserat
+    font-family: 'Montserrat', sans-serif;
+
+h2 font: Courier
+    font-family: 'Courier Prime', monospace;
+
+h3-h6 font: karma
+Main font: Karma
+    font-family: 'Karma', serif;
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Karma:wght@400;500&family=Montserrat:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+
+
+BG color: #1C140D
+border colour: #F2E9E1
+accent colour: #CBE86B
+
+main text color: white
+link colour: #F2E9E1
+link hover colour: #CBE86B
+
+h1 colour: #F2E9E1
+h2 colour: #CBE86B
+h3-h6 colour: #F2E9E1
+
+
